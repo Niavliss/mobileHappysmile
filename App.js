@@ -5,7 +5,7 @@
  */
 
 import {createStackNavigator} from 'react-navigation';
-import SlashScreen from './src/screens/SlashScreen';
+import SplashScreen from './src/screens/SplashScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import PostsScreen from './src/screens/PostsScreen';
 import PostScreen from './src/screens/PostScreen';
@@ -16,13 +16,13 @@ import CreatePostScreen from './src/screens/CreatePostScreen';
 export default createStackNavigator(
     {
         Home: HomeScreen,
-        Slash: SlashScreen,
+        Splash: SplashScreen,
         Posts: PostsScreen,
         Post: PostScreen,
         Login: LoginScreen,
         CreatePost: CreatePostScreen
     },
     {
-        initialRouteName: 'Slash',
+        initialRouteName: 'Splash',
     }
 );

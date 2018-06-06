@@ -7,7 +7,9 @@ import {
 
 
 export default class PostsScreen extends Component {
-
+    static navigationOptions = {
+        title: 'Liste des posts'
+    }
     render() {
         return (
             <View>
