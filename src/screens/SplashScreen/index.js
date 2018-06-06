@@ -6,8 +6,10 @@ import {
 } from 'react-native';
 
 
-export default class SlashScreen extends Component {
-
+export default class SplashScreen extends Component {
+    static navigationOptions = {
+        header:null
+    }
     constructor(props) {
         super(props);
         this.state = {};
@@ -16,13 +18,13 @@ export default class SlashScreen extends Component {
     componentDidMount() {
             setTimeout(
                 () => {
-                this.props.navigation.navigate('Home')}, 3000);
+                this.props.navigation.navigate('Posts')}, 3000);
     }
 
 render()
 {
     return (
-        <View style={styleSlash.logo}>
+        <View style={styleSplash.logo}>
             <Image source={require('./../../assets/img/logo.png')}/>
         </View>
     )

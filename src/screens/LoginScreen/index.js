@@ -8,7 +8,9 @@ import {
 } from 'react-native';
 
 export default class LoginScreen extends Component {
-
+    static navigationOptions = {
+        title: 'Connexion'
+    }
     render() {
         return (
             <View style={styleLogin.container}>

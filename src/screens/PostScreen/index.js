@@ -8,7 +8,9 @@ import stylePost from "./styles";
 
 
 export default class PostsScreen extends Component {
-
+    static navigationOptions = {
+        title: 'Post'
+    }
     render() {
         return (
             <View>
