@@ -12,7 +12,7 @@ export default class PostsScreen extends Component {
         return (
             <View>
             <Nav/>
-            <PostResume/>
+            <PostResume navigation={this.props.navigation} />
             </View>
         )
     }
