@@ -6,7 +6,10 @@ import {
 import PostResume from './../../components/PostResume'
 
 export default class HomeScreen extends Component {
-
+    static navigationOptions = {
+        headerLeft: null,
+        title: 'Accueil'
+    }
     render() {
         return (
             <View>
