@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styleSlash from './styles'
+import styleSplash from './styles'
 import {
     Image,
     View
@@ -9,7 +9,7 @@ import {
 export default class SplashScreen extends Component {
     static navigationOptions = {
         header:null
-    }
+    };
     constructor(props) {
         super(props);
         this.state = {};
@@ -18,7 +18,7 @@ export default class SplashScreen extends Component {
     componentDidMount() {
             setTimeout(
                 () => {
-                this.props.navigation.navigate('Posts')}, 3000);
+                this.props.navigation.navigate('Home')}, 3000);
     }
 
 render()
