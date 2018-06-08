@@ -79,3 +79,5 @@ Supprimerait ios/
 Supprimerait package-lock.json
 Supprimerait package.json
 Supprimerait src/
+/package.json
+/package-lock.json

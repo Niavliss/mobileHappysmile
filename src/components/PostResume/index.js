@@ -46,8 +46,8 @@ export default class PostResume extends Component {
                 <FlatList
                     data={this.state.dataSource}
                     renderItem={({item}) =>
-                        <ScrollView style={stylePost.box}>
-                            <TouchableOpacity onPress={() => this.props.navigation.navigate('Post')}>
+                        <View style={stylePost.box}>
+                            <TouchableOpacity onPress={() => this.props.navigation.navigate('Post', {post: item})}>
                                 <Text style={stylePost.title}>
                                     {item.title}
                                 </Text>
@@ -58,7 +58,7 @@ export default class PostResume extends Component {
                                     {item.content}
                                 </Text>
                             </TouchableOpacity>
-                        </ScrollView>
+                        </View>
                     }
                     keyExtractor={(item, index) => index}
                 />
