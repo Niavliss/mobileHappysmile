@@ -18,7 +18,15 @@ export default class PostResume extends Component {
     }
 
     componentDidMount() {
-        return fetch('https://www.happy-smile.fr/api/post')
+        return fetch('https://www.happy-smile.fr/api/post',
+            {
+                method: 'GET',
+                headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+                }
+            }
+        )
             .then((response) => response.json())
             .then((responseJson) => {
                 this.setState({
