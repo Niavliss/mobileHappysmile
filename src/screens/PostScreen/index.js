@@ -7,10 +7,8 @@ import {
 import stylePost from "./styles";
 
 
-export default class PostsScreen extends Component {
-    static navigationOptions = {
-        title: 'Post'
-    }
+export default class PostScreen extends Component {
+
     constructor(props){
         super(props);
         this.state ={

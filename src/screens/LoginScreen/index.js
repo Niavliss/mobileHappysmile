@@ -11,9 +11,6 @@ import TokenStorage from '../../services/TokenStorage';
 
 
 export default class LoginScreen extends Component {
-    static navigationOptions = {
-        title: 'Connexion'
-    };
 
     constructor(props) {
         super(props);

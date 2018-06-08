@@ -9,9 +9,7 @@ import {
 import styleCreate from './styles';
 
 export default class CreateScreen extends Component {
-    static navigationOptions = {
-        title: 'Publier'
-    }
+
     constructor(props) {
         super(props);
         this.state = {type: '',};
