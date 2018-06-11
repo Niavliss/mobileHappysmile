@@ -10,7 +10,7 @@ export default class SplashScreen extends Component {
 
 
     componentDidMount() {
-        if (TokenStorage.token !== '') {
+        if (TokenStorage.token !==  undefined) {
             setTimeout(
                 () => {
                     this.props.navigation.navigate('Posts')
