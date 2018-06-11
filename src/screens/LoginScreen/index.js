@@ -16,7 +16,8 @@ export default class LoginScreen extends Component {
         super(props);
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            token:''
         };
     }
 
@@ -43,7 +44,7 @@ export default class LoginScreen extends Component {
                 else {
                     TokenStorage.token = res.access_token;
                     Alert.alert("Success", "You have succesfully login");
-                    this.props.navigation.navigate('Home');
+                    this.props.navigation.navigate('Posts');
                 }
 
             }).catch((error) => {

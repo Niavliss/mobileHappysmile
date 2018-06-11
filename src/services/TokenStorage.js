@@ -1,3 +1,4 @@
 class TokenStorage {
-    static token = null;
+    static token = '';
     }
+

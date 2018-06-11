@@ -15,27 +15,27 @@ export default class Nav extends Component {
                 <ScrollView horizontal={true}>
                     <TouchableOpacity onPress={this.onPress}>
                         <View style={styleNav.button}>
-                            <Text>5 Derniers</Text>
+                            <Text style={styleNav.text}>5 Derniers</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={this.onPress}>
                         <View style={styleNav.button}>
-                            <Text>Tout</Text>
+                            <Text style={styleNav.text}>Tout</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={this.onPress}>
                         <View style={styleNav.button}>
-                            <Text>Blagues</Text>
+                            <Text style={styleNav.text}>Blagues</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={this.onPress}>
                         <View style={styleNav.button}>
-                            <Text>Images</Text>
+                            <Text style={styleNav.text}>Images</Text>
                         </View>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={this.onPress}>
                         <View style={styleNav.button}>
-                            <Text>Videos</Text>
+                            <Text style={styleNav.text}>Videos</Text>
                         </View>
                     </TouchableOpacity>
                 </ScrollView>

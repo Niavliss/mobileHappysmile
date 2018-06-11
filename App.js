@@ -12,6 +12,7 @@ import PostScreen from './src/screens/PostScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import CreatePostScreen from './src/screens/CreatePostScreen';
 import Icon from 'react-native-vector-icons/Entypo';
+import styleGen from './src/assets/styles';
 
 
 export default createStackNavigator(
@@ -28,36 +29,33 @@ export default createStackNavigator(
                 title: 'Connexion',
             }),
         },
-        Home:  {
+        Home: {
             screen: HomeScreen,
-            navigationOptions: ({navigation}) => ({
+            navigationOptions: ({}) => ({
                 title: 'Accueil',
-                headerLeft: <Icon.Button onPress={() => navigation.navigate('Posts')} name={'menu'} size={20}/>,
-                headerRight: <Icon.Button onPress={() => navigation.navigate('Login')} name={'login'} size={20} />,
             }),
         },
         Posts: {
             screen: PostsScreen,
             navigationOptions: ({navigation}) => ({
                 title: 'Liste des posts',
-                headerLeft: <Icon.Button onPress={() => navigation.navigate('Home')} name={'home'} size={25}/>,
-                headerRight: <Icon.Button onPress={() => navigation.navigate('Login')} name={'login'} size={20}/>,
+                headerLeft:null,
+                headerRight : <Icon onPress={() => navigation.navigate('CreatePost')} name={'plus'} size={24}
+                                    style={styleGen.button}/>,
             }),
         },
         Post: {
             screen: PostScreen,
-            navigationOptions: ({navigation}) => ({
+            navigationOptions: ({}) => ({
                 title: 'Post',
-                headerRight: <Icon.Button onPress={() => navigation.navigate('Login')} name={'login'} size={20}/>,
             }),
         },
-        CreatePost:  {
+        CreatePost: {
             screen: CreatePostScreen,
-            navigationOptions: ({navigation}) => ({
+            navigationOptions: ({}) => ({
                 title: 'Publier',
-                headerLeft: <Icon.Button onPress={() => navigation.navigate('Posts')} name={'menu'} size={20}/>,
             }),
-        },
+        }
     },
     {
         initialRouteName: 'Splash',
