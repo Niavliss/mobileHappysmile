@@ -33,6 +33,7 @@ export default createStackNavigator(
             screen: HomeScreen,
             navigationOptions: ({}) => ({
                 title: 'Accueil',
+                headerLeft: null,
             }),
         },
         Posts: {
